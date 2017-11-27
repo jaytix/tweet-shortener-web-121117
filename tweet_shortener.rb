@@ -19,8 +19,8 @@ end
 
 def word_substituter(tweet)
   replacing_words = dictionary
-  #words = tweet.split(" ")
-  words.tweet.split(" ").each_with_index do |word, i|
+  words = tweet.split(" ")
+  words.each_with_index do |word, i|
     replacing_words.each do |replacer|
       #binding.pry
       if words[i] == replacer[0]
