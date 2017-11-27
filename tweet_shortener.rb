@@ -22,9 +22,9 @@ def word_substituter(tweet)
   words = tweet.split(" ")
   words.each_with_index do |word, i|
     replacing_words.each do |replacer|
-      #binding.pry
+      binding.pry
       if word[i] == replacer[0]
-        binding.pry
+        #binding.pry
         word[i] = replacer[1]
       end
     end
