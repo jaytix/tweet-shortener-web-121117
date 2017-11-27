@@ -48,11 +48,16 @@ def selective_tweet_shortener(tweet)
 end
 
 def shortened_tweet_truncator(tweet)
+  array = []
+  i = 0
   newTweet = word_substituter(tweet)
   if newTweet.length > 140
     tweetArray = newTweet.split("")
-    newTweetArray = tweetArray.slice(140)
+      until array.length == 140
+        array.push(tweetArray[i])
+        i += 1
+      end
     binding.pry
-    return newTweetArray.join("")
+    return array.join("")
   end
 end
