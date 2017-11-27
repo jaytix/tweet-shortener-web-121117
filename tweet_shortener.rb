@@ -23,7 +23,7 @@ def word_substituter(tweet)
   words.each_with_index do |word, i|
     replacing_words.each do |replacer|
       #binding.pry
-      if word == replacer[0]
+      if word[i] == replacer[0]
         binding.pry
         word[i] = replacer[1]
       end
