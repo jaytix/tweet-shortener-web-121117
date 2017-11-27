@@ -25,7 +25,7 @@ def word_substituter(tweet)
       #binding.pry
       if word == replacer[0]
         #binding.pry
-        word[i] = replacer[1]!
+        word[i] = replacer[1]
       end
     end
   end
