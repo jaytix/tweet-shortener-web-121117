@@ -59,5 +59,7 @@ def shortened_tweet_truncator(tweet)
       end
     #binding.pry
     return array.join("")
+  elsif tweet.length < 140
+    return tweet
   end
 end
