@@ -57,7 +57,7 @@ def shortened_tweet_truncator(tweet)
         array.push(tweetArray[i])
         i += 1
       end
-    binding.pry
+    #binding.pry
     return array.join("")
   end
 end
