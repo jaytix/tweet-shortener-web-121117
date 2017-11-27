@@ -51,7 +51,7 @@ def shortened_tweet_truncator(tweet)
   newTweet = word_substituter(tweet)
   if newTweet.length > 140
     tweetArray = newTweet.split("")
-    tweetArray.slice(140)
-    return tweetArray.join("")
+    newTweetArray = tweetArray.slice(140)
+    return newTweetArray.join("")
   end
 end
